@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+<head><title>Hello Full Stack</title></head>
+<body>
+  <h1 id="message">Loading...</h1>
+  <script>
+    fetch('/api/hello')
+      .then(res => res.json())
+      .then(data => document.getElementById('message').innerText = data.message);
+  </script>
+</body>
+</html>
