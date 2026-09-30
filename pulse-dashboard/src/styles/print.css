@@ -1,0 +1,93 @@
+@media print {
+  @page {
+    margin: 0.6in;
+  }
+
+  * {
+    box-shadow: none !important;
+  }
+
+  body {
+    background: white !important;
+    color: black !important;
+  }
+
+  .app-shell {
+    display: block !important;
+    min-height: auto !important;
+  }
+
+  .sidebar,
+  .header-bar,
+  .footer {
+    display: none !important;
+  }
+
+  .main-content {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: none !important;
+
+    padding: 0 !important;
+
+    overflow: visible !important;
+  }
+
+  .kpi-grid,
+  .showcase-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .kpi-card,
+  .showcase-card,
+  .empty-state,
+  .table-wrapper {
+    background: transparent !important;
+    border: 1px solid #999 !important;
+  }
+
+  .table-wrapper {
+    max-height: none !important;
+    overflow: visible !important;
+  }
+
+  .data-table {
+    min-width: 0 !important;
+  }
+
+  .data-table thead {
+    position: static !important;
+  }
+
+  .data-table th,
+  .data-table td {
+    color: black !important;
+    background: transparent !important;
+    border-color: #999 !important;
+  }
+
+  .data-table tbody tr:nth-child(even) {
+    background: transparent !important;
+  }
+
+  .button,
+  .state-showcase {
+    display: none !important;
+  }
+
+  .status-pill,
+  .delta {
+    background: transparent !important;
+    color: black !important;
+    border: 1px solid #999;
+  }
+
+  .sparkline div {
+    background: black !important;
+  }
+
+  .content-section {
+    margin-bottom: 24px;
+  }
+}
